@@ -1,5 +1,5 @@
 Menginstal Jenkins 
-1.pertama untuk menginstal jenkins siapkan dulu kebutuhanya seperti di bawah ini
+1.pertama untuk menginstal jenkins siapkan dulu kebutuhanya lihat file yang satunya ;)
 2.Set Up SSH 
 Pastikan kita set up ssh di komputer atau VM kita yang kita gunakan,untuk set up SSH gunakan perintah berikut ($ssh-keygen)
 3.Menginstall Sofware yang di butuhkan 
