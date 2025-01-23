@@ -1,0 +1,24 @@
+Menginstal Jenkins 
+1.pertama untuk menginstal jenkins siapkan dulu kebutuhanya seperti di bawah ini
+2.Set Up SSH 
+Pastikan kita set up ssh di komputer atau VM kita yang kita gunakan,untuk set up SSH gunakan perintah berikut ($ssh-keygen)
+3.Menginstall Sofware yang di butuhkan 
+    • Java 17
+    • Git
+sebelum menginstall git kita bisa cek dulu apakah git sudah terinstal apa belum maka gunkan perintah ($ git - -versioan)
+jika belum di install gunakan perinyah berikut untuk mrnginstall git  ($sudo apt-get install git)
+pastikan dulu apakah java sudah terinstall apa belum gunakan perintah ($ javac - -verision)
+untuk menginstallnya gunakan perintah ($ sudo apt-get install openjdk-17-jdk-headless) ($ javac - -version)
+4.install jenkins
+download dulu jenkins-nya di link berikut (https://www.jenkins.io/download/)
+pilih yang Generic Java packge(war),salin dengan cara arahkan kursor lalu click kanan lalu copy link,untuk download gunakan perintah “wget” lalu tempel jenkins yang kita salin tadi bisa di lihat seperti di bawah  
+($ wget https://get.jenkins.io/war-stable/2.479.3/jenkins.war) 
+setelah di install coba cek dengan perintah ($ls -l)
+5.jalankan dengan perintah berikut (java -jar jenkins.war –httpPort=xxx) jika ingin mengganti portnya silahkan isi sesuai dengan keinginan kita,jiga tidak ingin mengubah portnya maka gunakan  perintah 
+($ java -jar jenkins.war)
+kita harus melakukan unlock cara untuk mendapatkan locknya buka file ini “/home/jenkins/.jenkins/secrets/initialAdminPassword”
+gunakan perintah ($ cat /home/jenkins/.jenkins/secrets/initialAdminPassword)
+akan ada 2 pilihan bisa di lihat di file yang satu lagi untuk melihat tampilannya
+6.Membuat admin user
+isi dengan keinginan kita sendiri untuk username,passwordnya,dan full namenya lalu save and continue lalu isi jenkins URL-nya
+lalu start using jenkins 
