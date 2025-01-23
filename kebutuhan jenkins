@@ -1,0 +1,14 @@
+untuk menginstal jenkins siapkan dulu kebutuhanya seperti di bawah ini
+1.Hardware 
+Minimum
+    • 256 mb of Ram
+    • 1 GB of Drive space
+Rekomendasi
+    • 4GB of Ram
+    • 50GB Drive space
+Software 
+    • SSH
+    • Java11
+    • Git
+    • Web Browser
+Untuk sistem oprasi saya menggunakan Linux karena kebanyakan perusahaan menggunkan linux
