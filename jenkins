@@ -1,0 +1,19 @@
+mengenal jenkins 
+1.jenkins data
+-jenkins itu tidak memerlukan database untuk menyimpan seluruh konfigurasi dan datanya
+-jenkins akan secara otomatis membaut folder jenkins di home directory system oprasi kita 
+-di folder tersebut.jenkins secara otomatis kita akan menghapus data jenkins
+
+2.membuat job
+-job adalah panggilan untuk tugas outomation di jenkins
+-saat kita menginstall jenkins tidak ada satu oun job sama sekali 
+-kita bisa membuat job di jenkins menggunakan web jenkins
+-caranya
+a.buka jenkins lalu cari new item (untuk membuat job baru)
+b.di tambahkan juga deskripsi untuk perject
+3.cara menjalankan job
+a.pilih job yang akan di jalankan 
+b.build now (untuk menjalankan job)
+c.configure (untuk konfigurasi ulang)
+d.changes (perubahan)
+e.concole output 
