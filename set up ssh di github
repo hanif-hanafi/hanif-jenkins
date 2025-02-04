@@ -1,0 +1,32 @@
+-menggunakan github sebagai git repository untuk menyimpan misal project kita
+-oleh karena itu kita perlu melakukan set up github terlebih dahulu agar jenkins bisa mengambil koda program di github
+-tambahkan ssh public key di VM jenkins ke github
+caranya:
+a.masuk ke terminal masuk ke directory ssh ($cd ssh)
+b.lihat file ($cat nama file.pub) lalu copy
+c.buka github lalu seting => ssh and GPG key tambahkan ssh key yang tadi di copy
+
+A.credentials 
+-saat kita melakukan komeksi ke github biasanya kita perllu credentials SSH 
+-jenkins sendiri biasanya bisa menggunakna bawaan dari sistem oprasinya namun hal ini tidak di sarankan 
+-hal ini karena kedepannya ketika set up beberapa server jenkins kemungkinan credentials ssh-nya bisa berbeda 
+-oleh karena itu ada baikanya semua informasi credential di simpan di jenkins 
+-jenkins sendiri memeliki fitur bernama credentials diaman kita bisa meyimpan credential salah satunya credential untuk ssh
+caranya:
+a.ambil yang private key ($cd ssh => cat nama file.id)
+b.masuk lagi ke jenkins (manage jenkins,manage credentials,global,add credentials)
+c.ssh wername with private key,global,github-nama github kalian misal (github-hanif,github-hanif,hanif)
+d.private key => enter direcly,add,paste file yang sudah di copy
+
+integrasi dengan git 
+-setelah kita set up git dengan github ,dan juga menambahkan credentials ssh ke jenkins,sekarang kita bisa mulai integrasi jenkins dengan git di github
+-namun sebelumnya yang perlu kita lakukan adalah pastikan memiliki project di github yang bisa digunakan sebagai sumber kode untuk jenkins job yang sudah kita buat
+
+konfigurasi git di github
+a.dashboard-belajar jenkins(job yang kita buat),configure,source code managemen => git,copy git yang ada di github (home,repository,code,lalu copy URL)
+b.credentials
+c.branch yang di github(main) ini bisa di sesauaikan lalu save
+cara mencobanya
+-dengan build now
+-lihat di cosole output (tanda ceklis hijau setalah melakukan build now)
+-jenkins defaultnya akan menyimpan semua datnya di menu "workspace"
