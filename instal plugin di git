@@ -1,0 +1,10 @@
+cara menginstal plugin di git
+git plugin
+-secara default jenkins tidak tahu cara mengambil kode program yang terdapat di git 
+-kita perlu menginstal git plugin dulu
+-setelah menginstall git plugin maka secara otomatis kita bisa menambahkan sumber kode dari git reposiory di job yang sudah kita buat
+-caranya:
+a.dashboard
+b.manage plugin
+c.available (cari git)
+d.lalu install
